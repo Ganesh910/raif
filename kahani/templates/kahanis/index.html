@@ -1,0 +1,15 @@
+{% extends "kahanis/layout.html" %}
+
+{% block body %}
+
+{% for kahani in kahanis %}
+<div class="article">
+    <h2>{{ kahani.title }}</h2>
+    <div class="author">
+        {{ kahani.date_written }}
+    </div>
+    <div class="content">{{ kahani.content|truncatechars:350|linebreaksbr }}</div>
+    <button>Read More</button>
+</div>
+{% endfor %}
+{% endblock %}
