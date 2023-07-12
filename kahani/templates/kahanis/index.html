@@ -9,7 +9,7 @@
         {{ kahani.date_written }}
     </div>
     <div class="content">{{ kahani.content|truncatechars:350|linebreaksbr }}</div>
-    <button>Read More</button>
+    <a href="{% url 'kahani:post' kahani_id=kahani.id %}"><button>Read More</button></a>
 </div>
 {% endfor %}
 {% endblock %}
