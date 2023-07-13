@@ -2,8 +2,7 @@
     border-radius: 25px;
     padding: 40px;
     margin: 40px;
-    box-shadow: 0 0px 0px rgb(0 0 0 / 0.3);
-    transition: box-shadow 0.5s ease-out;
+    background-color: white;
 }
 
 .content {
@@ -13,9 +12,6 @@
     margin-top: 20px;
 }
 
-.article:hover {
-    box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
-}
 .container {
     background-color: #fff;
     width: 60%;
@@ -25,19 +21,30 @@
     border-radius: 10px;
     position: relative;
     top: -150px;
-    z-index: 2;
+    z-index: 1;
 }
+
+.container .kahani .date-written {
+    margin: 20px 0;
+}
+
 body {
     background-color: #edfceb;
     font-family: 'Courier New', monospace;
     line-height: 1.5;
+
+}
+
+* {
+    margin: 0;
 }
 
 button {
-    background-color: #89ebb3;
+    background-color: #3bf68c;
     border: none;
     padding: 10px;
     box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
+    cursor: pointer;
 }
 
 .author {
@@ -51,28 +58,48 @@ button {
 }
 
 .topBox {
-    height:400px;
-    background-color: #89ebb3;
-    z-index: 1;
+    height: 400px;
+    background-color: #3bf68c;
     position: relative;
-    /* opacity: 0.3; */
+    margin-top: 0;
 }
 
 .parent {
     position: relative;
-    /* z-index: 2; */
-    /* background-color: blue; */
 }
 
-/* .article:hover {
-    animation: pushMe 0.6s forwards;
-    
+.header {
+    background-color: #3bf68c;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
-@keyframes pushMe{
-    /* 0%{
-        box-shadow: 0 0px 0px rgb(0 0 0 / 0.3);
-    } */
-    /* 100%{
-        box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
-    }
-} */ 
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 8%;
+}
+
+header .menu-title {
+
+    width: fit-content;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    flex: 1;
+    text-align: right;
+}
+
+header nav a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+/* #89ebb3 */
