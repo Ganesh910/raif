@@ -17,11 +17,15 @@
     box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
 }
 .container {
+    background-color: #fff;
     width: 60%;
     margin: auto;
     padding: 20px;
     box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
     border-radius: 10px;
+    position: relative;
+    top: -150px;
+    z-index: 2;
 }
 body {
     background-color: #edfceb;
@@ -46,7 +50,19 @@ button {
     text-align: center;
 }
 
+.topBox {
+    height:400px;
+    background-color: #89ebb3;
+    z-index: 1;
+    position: relative;
+    /* opacity: 0.3; */
+}
 
+.parent {
+    position: relative;
+    /* z-index: 2; */
+    /* background-color: blue; */
+}
 
 /* .article:hover {
     animation: pushMe 0.6s forwards;
