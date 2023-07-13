@@ -17,6 +17,6 @@ def view_kahani(request, kahani_id):
     kahani = Kahani.objects.get(id=kahani_id)
 
     # render the kahani.html page and pass the values of kahani
-    return render(request, "kahani.html", {
+    return render(request, "post.html", {
         "kahani":kahani
     })
