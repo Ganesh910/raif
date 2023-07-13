@@ -11,6 +11,19 @@
 </head>
 
 <body>
+    <header class="header">
+        <a href="{% url 'kahani:index' %}"><h1 class="menu-title">Raif Writes</h1></a>
+        <nav>
+          <a href="#"><b>ग़ज़ल</b></a>
+          <a href="#"><b>नज़्म</b></a>
+          <a href="#"><b>क़ितआ</b></a>
+          <a href="#"><b>शेर</b></a>
+          <a href="{% url 'kahani:index' %}"><b>कहानी</b></a>
+          <a href="#"><b>Story</b></a>
+          <a href="#"><b>Poem</b></a>
+          <a href="#"><b>About</b></a>
+        </nav>
+      </header>
     <div class="parent">
         <div class="topBox"></div>
         <div class="container">
@@ -20,5 +33,4 @@
     </div>
     <div class="footer"> Created By Ganesh Pandey </div>
 </body>
-
 </html>
