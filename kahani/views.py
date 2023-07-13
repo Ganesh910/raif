@@ -6,7 +6,7 @@ from .models import Kahani
 
 def index(request):
     kahani = Kahani.objects.all()
-    return render(request, "kahanis/index.html", {
+    return render(request, "index.html", {
         "kahanis":kahani
     })
 
@@ -17,6 +17,6 @@ def view_kahani(request, kahani_id):
     kahani = Kahani.objects.get(id=kahani_id)
 
     # render the kahani.html page and pass the values of kahani
-    return render(request, "kahanis/kahani.html", {
+    return render(request, "kahani.html", {
         "kahani":kahani
     })
