@@ -2,14 +2,18 @@
 
 {% block body %}
 
-{% for kahani in kahanis %}
+{% for post in posts %}
 <div class="article">
-    <h2>{{ kahani.title }}</h2>
+    <h2>{{ post.title }}</h2>
     <div class="author">
-        {{ kahani.date_written }}
+        {{ post.date_written }}
     </div>
-    <div class="content">{{ kahani.content|truncatechars:350|linebreaksbr }}</div>
-    <a href="{% url 'kahani:post' kahani_id=kahani.id %}"><button>Read More</button></a>
+    <div class="content">{{ post.content|truncatechars:350|linebreaksbr }}</div>
+
+    <!-- It creates a string with app_name and path_name as saving in var called new_url -->
+    {% with app_name|add:":"|add:path_name as new_url%}
+    <a href="{% url new_url post_id=post.id %}"><button>Read More</button></a>
+    {% endwith %}
 </div>
 {% endfor %}
 {% endblock %}
