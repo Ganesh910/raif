@@ -15,5 +15,7 @@
     <a href="{% url new_url post_id=post.id %}"><button>Read More</button></a>
     {% endwith %}
 </div>
+{% empty %}
+<div class="article">There is no work here right now. But I'll write soon for you!</div>
 {% endfor %}
 {% endblock %}

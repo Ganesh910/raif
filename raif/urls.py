@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('kahani/', include('kahani.urls')),
     path('ghazals/', include('ghazals.urls')),
-    path('nazm', include('nazm.urls'))
+    path('nazm/', include('nazm.urls')),
+    path('poem/', include('poem.urls')),
 ]
