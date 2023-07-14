@@ -22,4 +22,5 @@ urlpatterns = [
     path('ghazals/', include('ghazals.urls')),
     path('nazm/', include('nazm.urls')),
     path('poem/', include('poem.urls')),
-]
+    path('story/', include('story.urls'))
+    ]
