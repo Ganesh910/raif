@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'nazm',
     'ghazals',
     'kahani',
     'django.contrib.admin',
