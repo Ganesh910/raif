@@ -1,0 +1,105 @@
+.article {
+    border-radius: 25px;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+}
+
+.content {
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 50px 30px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.3);
+    border-radius: 10px;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+}
+
+.container .kahani .date-written {
+    margin: 20px 0;
+}
+
+body {
+    background-color: #edfceb;
+    font-family: 'Courier New', monospace;
+    line-height: 1.5;
+
+}
+
+* {
+    margin: 0;
+}
+
+button {
+    background-color: #3bf68c;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+
+.author {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.footer {
+    padding: 60px;
+    text-align: center;
+}
+
+.topBox {
+    height: 400px;
+    background-color: #3bf68c;
+    position: relative;
+    margin-top: 0;
+}
+
+.parent {
+    position: relative;
+}
+
+.header {
+    background-color: #3bf68c;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 8%;
+}
+
+header .menu-title {
+
+    width: fit-content;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    flex: 1;
+    text-align: right;
+}
+
+header nav a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+/* #89ebb3 */
