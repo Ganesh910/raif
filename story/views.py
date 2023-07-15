@@ -4,7 +4,7 @@ from .models import Story
 
 # Create your views here.
 def index(request):
-    stories = Story.objects.all()
+    stories = Story.objects.order_by("-date_written")
     context = {
         'posts':stories,
         'app_name':'story',
