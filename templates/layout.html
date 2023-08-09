@@ -14,18 +14,23 @@
     <header class="header">
         <a href="{% url 'home' %}"><h1 class="menu-title">Raif Writes</h1></a>
         <nav>
-          <a href="{% url 'ghazals:index' %}"><b>ग़ज़ल</b></a>
-          <a href="{% url 'nazm:index' %}"><b>नज़्म</b></a>
-          <!-- <a href="#"><b>क़ितआ</b></a> -->
-          <!-- <a href="#"><b>शेर</b></a> -->
-          <a href="{% url 'kahani:index' %}"><b>कहानी</b></a>
-          <a href="{% url 'story:index' %}"><b>Narrative</b></a>
-          <a href="{% url 'poem:index' %}"><b>Poem</b></a>
-          <a href="{% url 'about' %}"><b>About</b></a>
+        <ul class="nav-list">
+          <li><a href="{% url 'ghazals:index' %}">ग़ज़ल</a></li>
+          <li><a href="{% url 'nazm:index' %}">नज़्म</a></li>
+          <!-- <li><a href="#">क़ितआ</a></li> -->
+          <!-- <li><a href="#">शेर</a></li> -->
+          <li><a href="{% url 'kahani:index' %}">कहानी</a></li>
+          <li><a href="{% url 'story:index' %}">Narrative</a></li>
+          <li><a href="{% url 'poem:index' %}">Poem</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
         </nav>
       </header>
     <div class="parent">
-        <div class="topBox"></div>
+        <div class="topBox">
+            {% block topBox %}
+            {% endblock %}
+        </div>
         <div class="container">
             {% block body %}
             {% endblock %}
