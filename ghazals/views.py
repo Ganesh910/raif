@@ -8,7 +8,8 @@ def index(request):
     context = {
         'posts':ghazals,
         'app_name':'ghazals',
-        'path_name':'ghazal'
+        'path_name':'ghazal',
+        'title':'ग़ज़ल'
         }
     return render(request, 'index.html', context)
 
