@@ -1,3 +1,10 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: 'Courier New', monospace;
+    }
+
 .article {
     border-radius: 25px;
     padding: 40px;
@@ -30,13 +37,8 @@
 
 body {
     background-color: #edfceb;
-    font-family: 'Courier New', monospace;
     line-height: 1.5;
 
-}
-
-* {
-    margin: 0;
 }
 
 button {
@@ -64,13 +66,10 @@ button {
     margin-top: 0;
 }
 
-.parent {
-    position: relative;
-}
-
 .header {
     background-color: #3bf68c;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 2;
     display: flex;
@@ -93,7 +92,7 @@ button {
 .nav-list {
     display: flex;
     list-style: none;
-    width: fit-content;
+    flex-wrap: wrap;
 }
 
 .nav-list a {
@@ -107,6 +106,13 @@ button {
 .topBox {
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 35px;
+    position: relative;
+    top: 70px;
+}
+
+.topBox h1 {
+    position: relative;
+    top: 30px;
 }
 /* #89ebb3 */
