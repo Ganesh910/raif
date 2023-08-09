@@ -73,33 +73,40 @@ button {
     position: sticky;
     top: 0;
     z-index: 2;
-}
-
-header {
     display: flex;
     align-items: center;
     padding: 10px 8%;
+    justify-content: space-between;
 }
 
-header .menu-title {
-
+.header .menu-title {
     width: fit-content;
     margin-right: 20px;
     cursor: pointer;
 }
 
-header a {
+.header a {
     text-decoration: none;
     color: #fff;
 }
 
-header nav {
-    flex: 1;
-    text-align: right;
+.nav-list {
+    display: flex;
+    list-style: none;
+    width: fit-content;
 }
 
-header nav a {
+.nav-list a {
+    font-size: 20px;
+}
+
+.nav-list li {
     margin: 0 20px;
-    text-decoration: none;
+}
+
+.topBox {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
 }
 /* #89ebb3 */
