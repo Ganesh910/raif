@@ -10,6 +10,7 @@ def index(request):
         "posts":kahani,
         'app_name':'kahani',
         'path_name':'kahani',
+        'title':'कहानी',
     }
     return render(request, "index.html", context)
 
