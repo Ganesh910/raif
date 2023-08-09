@@ -1,11 +1,18 @@
 {% extends "layout.html" %}
 
+<!-- Setting the title of the page -->
 {% block title %}
-{{ app_name }}
+{{ title }}
+{% endblock %}
+
+<!-- setting the topBox of the page -->
+{% block topBox %}
+<h1>{{ title }}</h1>
 {% endblock %}
 
 {% block body %}
 
+<!-- Iterating over the posts and displaying them -->
 {% for post in posts %}
 <div class="article">
     <h2>{{ post.title }}</h2>
