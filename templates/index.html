@@ -23,7 +23,7 @@
 
     <!-- It creates a string with app_name and path_name as saving in var called new_url -->
     {% with app_name|add:":"|add:path_name as new_url%}
-    <a href="{% url new_url post_id=post.id %}"><button>Read More</button></a>
+    <a href="{% url new_url post_id=post.id %}"><button class="btn">Read More</button></a>
     {% endwith %}
 </div>
 {% empty %}
