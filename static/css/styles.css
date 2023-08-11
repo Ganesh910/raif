@@ -7,7 +7,7 @@
 
 .article {
     border-radius: 25px;
-    padding: 40px;
+    padding: 15px;
     margin: 20px;
     background-color: white;
 }
@@ -29,6 +29,7 @@
     position: relative;
     top: -150px;
     z-index: 1;
+    min-width: 400px;
 }
 
 .container .kahani .date-written {
@@ -47,6 +48,7 @@ button {
     padding: 10px;
     box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
     cursor: pointer;
+    color: #fff;
 }
 
 .author {
@@ -64,10 +66,16 @@ button {
     background-color: #3bf68c;
     position: relative;
     margin-top: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    top: 70px;
+    min-width: 400px;
 }
 
 .header {
-    background-color: #3bf68c;
+    background-color: #032830;
     position: fixed;
     width: 100%;
     top: 0;
@@ -76,6 +84,8 @@ button {
     align-items: center;
     padding: 10px 8%;
     justify-content: space-between;
+    transition: 0.3s ease;
+    min-height: 70px;
 }
 
 .header .menu-title {
@@ -93,6 +103,8 @@ button {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    position: relative;
+    transition: 0.3s ease;
 }
 
 .nav-list a {
@@ -103,16 +115,61 @@ button {
     margin: 0 20px;
 }
 
-.topBox {
-    text-align: center;
-    color: #fff;
-    font-size: 35px;
-    position: relative;
-    top: 70px;
-}
-
 .topBox h1 {
     position: relative;
     top: 30px;
+    transition: 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.line {
+background-color: #fff;
+height: 2px;
+width: 27px;
+margin: 4px 0;
+transition: all 0.3s ease-in-out;
+}
+
+@media (max-width : 999px){
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #032830;
+        max-height:0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.nav--active {
+    max-height: 1000px;
+}
+
+.ham--active .line:nth-child(1){
+    transform: rotate(45deg) translateY(12px);
+}
+.ham--active .line:nth-child(2){
+    opacity: 0;
+
+}
+.ham--active .line:nth-child(3){
+    transform: rotate(-45deg) translateY(-12px);
 }
 /* #89ebb3 */
