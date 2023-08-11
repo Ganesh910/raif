@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Kahani{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
 </head>
 
 <body>
     <header class="header">
         <a href="{% url 'home' %}"><h1 class="menu-title">Raif Writes</h1></a>
-        <nav>
+        <nav class="nav">
         <ul class="nav-list">
           <li><a href="{% url 'ghazals:index' %}">ग़ज़ल</a></li>
           <li><a href="{% url 'nazm:index' %}">नज़्म</a></li>
@@ -25,6 +26,11 @@
           <li><a href="{% url 'about' %}">About</a></li>
         </ul>
         </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
       </header>
     <div class="parent">
         <div class="topBox">
